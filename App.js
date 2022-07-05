@@ -41,7 +41,9 @@ rotate.addEventListener('click', (e)=>{
     img.src = data.results[0].picture.large;
     console.log(data)
       
-      
+      this.addEventListener('animationend', () => {
+        rotate.classList.remove('rotate-icon')
+      })
       
        
 
