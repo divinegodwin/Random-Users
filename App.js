@@ -3,19 +3,35 @@ let img = document.querySelector("img");
 
 let info = document.querySelector(".info");
 
-let locate = document.querySelector(".location-icon")
-let emails = document.querySelector(".email-icon")
+// let i = document.querySelectorAll('#i');
+// console.log(i); i is a list so we need to convert it to 
+// an aaray to use the forEach() method(beacause it is  an array methos) 
 
-let calendar  = document.querySelector(".calendar-icon")
+let locate = document.querySelector(".location-icon");
+let emails = document.querySelector(".email-icon");
 
-let name = document.querySelector(".name-icon")
+let calendar  = document.querySelector(".calendar-icon");
 
-let phone = document.querySelector(".phone-icon")
+let name = document.querySelector(".name-icon");
 
+let phone = document.querySelector(".phone-icon");
 
-let password = document.querySelector(".password-icon")
+let password = document.querySelector(".password-icon");
 
 let rotate = document.querySelector("#rotate");
+
+// arrayI = Array.from(i);
+// console.log(arrayI); i is now an an array
+
+// arrayI.forEach(element => {
+//   element.addEventListener('click', => {
+//         // write function in here
+//   })
+// }); no need for this since the functions are different for each icon
+
+
+
+
 
 window.onload =()=>{
   name.style.color = "#CCFF33";
@@ -73,7 +89,8 @@ e.preventDefault()
 
 calendar.addEventListener('click', (e) => {
 
-      e.preventDefault()
+      e.preventDefault();
+      console.log(e)
 name.style.color = "#000";
     
 
